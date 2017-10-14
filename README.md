@@ -45,6 +45,3 @@ tensorboard --logdir=./summaries/celeba --port=6006
 1. Mnist will be automatically downloaded
 2. Celeba should be prepared by yourself in ./data/img_align_celeba
     - Download the dataset: https://www.dropbox.com/sh/8oqt9vytwxb3s4r/AAB06FXaQRUNtjW9ntaoPGvCa?dl=0
-3. The cartoon-face dataset should be prepared by yourself in ./data/faces
-    - Download the dataset: https://pan.baidu.com/s/1eSifHcA, password: g5qa
-    - Reference: https://zhuanlan.zhihu.com/p/24767059
