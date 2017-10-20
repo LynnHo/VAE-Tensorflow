@@ -1,4 +1,4 @@
-# GANs
+# VAE
 
 Tensorflow implementation of VAE.
 
