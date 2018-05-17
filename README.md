@@ -2,7 +2,7 @@
 
 Tensorflow implementation of VAE.
 
-VAE: [Auto-encoding variational bayes](http://arxiv.org/abs/1312.6114) 
+VAE: [Auto-encoding variational bayes](http://arxiv.org/abs/1312.6114)
 
 ## Exemplar results
 
@@ -43,5 +43,7 @@ tensorboard --logdir=./summaries/celeba --port=6006
 
 ## Datasets
 1. Mnist will be automatically downloaded
-2. Celeba should be prepared by yourself in ./data/img_align_celeba
+2. Celeba should be prepared by yourself in ./data/img_align_celeba/*.jpg
     - Download the dataset: https://www.dropbox.com/sh/8oqt9vytwxb3s4r/AAB06FXaQRUNtjW9ntaoPGvCa?dl=0
+    - the above links might be inaccessible, the alternative is
+        - https://pan.baidu.com/s/1eSNpdRG#list/path=%2FCelebA%2FImg -> img_align_celeba.zip
