@@ -1,5 +1,4 @@
 *.pyc
-summaries
-sample_images_while_training
-data
-checkpoints
+__pycache__/
+/data/
+/output/

@@ -38,11 +38,4 @@ def flatten_fully_connected(inputs,
                                     trainable,
                                     scope)
 
-
-def leak_relu(x, leak, scope=None):
-    with tf.name_scope(scope, 'leak_relu', [x, leak]):
-        if leak < 1:
-            y = tf.maximum(x, leak * x)
-        else:
-            y = tf.minimum(x, leak * x)
-        return y
+flatten_dense = flatten_fully_connected
