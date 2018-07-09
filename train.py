@@ -70,7 +70,7 @@ def enc_dec(img, is_training=True):
     else:
         z = z_mu
 
-    # generate
+    # decode
     img_rec = Dec(z, is_training=is_training)
 
     return z_mu, z_log_sigma_sq, img_rec
