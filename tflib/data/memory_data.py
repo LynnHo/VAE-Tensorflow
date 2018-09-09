@@ -42,10 +42,11 @@ class MemoryData(Dataset):
         dataset = memory_data_batch_dataset(memory_data_dict, batch_size, prefetch_batch, drop_remainder, filter,
                                             map_func, num_threads, shuffle, buffer_size, repeat)
         self._bulid(dataset, sess)
-        if isinstance(memory_data_dict.values()[0], np.ndarray):
-            self._n_data = len(memory_data_dict.values()[0])
+        first_value = next(iter(memory_data_dict.values()))
+        if isinstance(first_value, np.ndarray):
+            self._n_data = len(first_value)
         else:
-            self._n_data = memory_data_dict.values()[0].get_shape().as_list()[0]
+            self._n_data = first_value.get_shape().as_list()[0]
 
     def __len__(self):
         return self._n_data

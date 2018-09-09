@@ -19,7 +19,7 @@ _N_CPU = multiprocessing.cpu_count()
 def unzip_gz(file_name):
     unzip_name = file_name.replace('.gz', '')
     gz_file = gzip.GzipFile(file_name)
-    open(unzip_name, 'w+').write(gz_file.read())
+    open(unzip_name, 'wb+').write(gz_file.read())
     gz_file.close()
 
 
